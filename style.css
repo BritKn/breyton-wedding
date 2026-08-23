@@ -46,6 +46,19 @@
     .timeline {
         width: 100%;
     }
+    .timeline-event {
+        width: 100%;
+        margin-left: 0;
+        text-align: left;
+    }
+        .timeline-event:nth-child(even)::before {
+        margin-left: 0;
+        text-align: left;
+    }
+        .timeline-event:nth-child(even) {
+        margin-left: 0;
+        text-align: left;
+    }
 }
 .hero {
     text-align: center;
