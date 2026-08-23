@@ -12,13 +12,20 @@
 .menu a{
     text-decoration: none;
     color: black;
+    transition: color 0.3s, transform 1.0s;
+    display: inline-block;
+}
+.menu a:hover {
+    color: pink;
+    transform: scale(1.1);
 }
 
-#ceremony, #about {
+#ceremony, #about, #party {
     margin-top: 50px;
     border: 1px solid black;
     padding: 25px;
     border-radius: 10px;
+    scroll-margin: top 100px;
 }
 .party-groups {
     display: flex;
@@ -129,4 +136,7 @@
         margin-left: 0;
         text-align: left;
     }
+}
+html {
+    scroll-behavior: smooth;
 }
