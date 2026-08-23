@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 .menu{
     display: flex;
     gap: 30px;
@@ -137,7 +140,7 @@
         text-align: left;
     }
     #ceremony, #about, #party {
-    scroll-margin-top: 220px;
+    scroll-margin-top: 190px;
 }
 }
 html {
