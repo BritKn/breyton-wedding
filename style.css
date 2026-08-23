@@ -1,0 +1,32 @@
+.menu{
+    display: flex;
+    gap: 30px;
+    background-color: beige;
+    padding: 15px;
+    width: 100%;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+#ceremony, #about {
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 10px;
+}
+.party-groups {
+    display: flex;
+    gap: 50px;
+}
+.party-groups div{
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+}
