@@ -136,6 +136,9 @@
         margin-left: 0;
         text-align: left;
     }
+    #ceremony, #about, #party {
+    scroll-margin-top: 220px;
+}
 }
 html {
     scroll-behavior: smooth;
