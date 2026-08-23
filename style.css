@@ -28,7 +28,7 @@ body {
     border: 1px solid black;
     padding: 25px;
     border-radius: 10px;
-    scroll-margin: top 100px;
+    scroll-margin: top 200px;
 }
 .party-groups {
     display: flex;
@@ -106,6 +106,9 @@ body {
     transform: translateX(-50%);
 }
 @media (max-width: 600px) {
+     html {
+        scroll-padding-top: 220px;
+    }
     .timeline::before {
         left: 0;
         transform: none;
@@ -145,4 +148,5 @@ body {
 }
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 65px;
 }
