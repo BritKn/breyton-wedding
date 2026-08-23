@@ -43,6 +43,9 @@
         flex-direction: column;
         gap: 15px;
     }
+    .timeline {
+        width: 100%;
+    }
 }
 .hero {
     text-align: center;
