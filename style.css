@@ -1,7 +1,7 @@
 .menu{
     display: flex;
     gap: 30px;
-    background-color: beige;
+    background-color: red;
     padding: 15px;
     width: 100%;
     justify-content: center;
@@ -95,6 +95,20 @@
     transform: translateX(-50%);
 }
 @media (max-width: 600px) {
+    .timeline::before {
+        left: 0;
+        transform: none;
+    }
+    .timeline-event::before {
+        left: 0;
+        right: auto;
+        transform: translateX(-50%);
+    }
+    .timeline-event:nth-child(even)::before {
+        left: 0;
+        right: auto;
+        transform: translateX(-50%);
+    }
     .party-groups {
         flex-direction: column;
     }
