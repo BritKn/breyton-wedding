@@ -28,7 +28,7 @@ body {
     border: 1px solid black;
     padding: 25px;
     border-radius: 10px;
-    scroll-margin: top 200px;
+    scroll-margin-top: 200px;
 }
 .party-groups {
     display: flex;
@@ -145,6 +145,16 @@ body {
     #ceremony, #about, #party {
     scroll-margin-top: 145px;
 }
+}
+.timeline-photo {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.timeline-photo:hover {
+    transform: scale(1.05);
 }
 html {
     scroll-behavior: smooth;
