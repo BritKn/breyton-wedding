@@ -152,7 +152,7 @@ body {
     }
     .menu a:hover {
     color: pink;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 }
 }
