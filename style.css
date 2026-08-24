@@ -146,6 +146,10 @@ body {
     }
     #ceremony, #about, #party {
     scroll-margin-top: 145px;
+    .timeline-photo {
+        height: auto;
+        object-fit: contain;
+    }
 }
 }
 .timeline-photo {
