@@ -150,6 +150,10 @@ body {
         height: auto;
         object-fit: contain;
     }
+    .menu a:hover {
+    color: pink;
+    transform: scale(1.05);
+}
 }
 }
 .timeline-photo {
