@@ -21,7 +21,7 @@ window.addEventListener("scroll", function () {
 
         menuOffset = menuOffset + scrollDifference;
 
-        const maxMove = menu.offsetHeight - 20;
+        const maxMove = menu.offsetHeight - 15;
 
         menuOffset = Math.max(0, Math.min(menuOffset, maxMove));
 
