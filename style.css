@@ -150,7 +150,7 @@ html {
     }
     .menu {
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
         transition: transform 0.3s;
         align-items: center;
     }
