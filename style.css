@@ -1,11 +1,12 @@
 body {
     margin: 0;
     overflow-x:hidden;
+    background-color:antiquewhite;
 }
 .menu{
     display: flex;
     gap: 30px;
-    background-color: beige;
+    background-color: rgb(74, 102, 114);
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
@@ -16,12 +17,12 @@ body {
 }
 .menu a{
     text-decoration: none;
-    color: black;
+    color: antiquewhite;
     transition: color 0.3s, transform 1.0s;
     display: inline-block;
 }
 .menu a:hover {
-    color: pink;
+    
     transform: scale(1.1);
 }
 
@@ -84,6 +85,7 @@ body {
 }
 .timeline-event h3 {
     margin-top: 0;
+    color: rgb(89, 129, 146);
 }
 .timeline-event:nth-child(even)::before {
     left: -13px;
