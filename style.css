@@ -22,7 +22,7 @@ body {
     display: inline-block;
 }
 .menu a:hover {
-    
+    font-weight: bold;
     transform: scale(1.1);
 }
 
