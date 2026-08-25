@@ -25,7 +25,6 @@ body {
     font-weight: bold;
     transform: scale(1.1);
 }
-
 #ceremony, #about, #party {
     margin-top: 50px;
     border: 1px solid black;
@@ -133,6 +132,10 @@ body {
     .menu {
         flex-direction: column;
         gap: 15px;
+        transition: transform 0.3s;
+    }
+    .menu-hidden {
+        transform: translateY(-80%);
     }
     .timeline {
         width: 100%;

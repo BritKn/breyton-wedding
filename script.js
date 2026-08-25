@@ -8,3 +8,13 @@ const countdownElement = document.getElementById("countdown");
 countdownElement.textContent = `Only ${daysUntilWedding} days til the wedding!`
 }
 updateCountdown();
+const menu = document.querySelector(".menu");
+let lastScrollY = window.scrollY;
+window.addEventListener("scroll", function () {
+    if (window.scrollY > lastScrollY) {
+        menu.classList.add("menu-hidden");
+    } else {
+        menu.classList.remove("menu-hidden");
+    } 
+lastScrollY = window.scrollY;
+});
