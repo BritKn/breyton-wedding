@@ -9,9 +9,32 @@ countdownElement.textContent = `Only ${daysUntilWedding} days til the wedding!`
 }
 updateCountdown();
 const menu = document.querySelector(".menu");
+const menu = document.querySelector(".menu");
+
+let lastScrollY = window.scrollY;
+let menuOffset = 0;
+
 window.addEventListener("scroll", function () {
-    const amountScrolled = window.scrollY;
-    const maxMove = menu.offsetHeight - 20;
-    const moveAmount = Math.min(amountScrolled, maxMove);
-    menu.style.transform = `translateY(-${moveAmount}px)`;
-})
+
+    if (window.innerWidth <= 600) {
+
+        const currentScrollY = window.scrollY;
+        const scrollDifference = currentScrollY - lastScrollY;
+
+        menuOffset = menuOffset + scrollDifference;
+
+        const maxMove = menu.offsetHeight - 20;
+
+        menuOffset = Math.max(0, Math.min(menuOffset, maxMove));
+
+        menu.style.transform = `translateY(-${menuOffset}px)`;
+
+        lastScrollY = currentScrollY;
+
+    } else {
+        menu.style.transform = "translateY(0)";
+        menuOffset = 0;
+        lastScrollY = window.scrollY;
+    }
+
+});
