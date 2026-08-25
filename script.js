@@ -9,8 +9,6 @@ countdownElement.textContent = `Only ${daysUntilWedding} days til the wedding!`
 }
 updateCountdown();
 const menu = document.querySelector(".menu");
-const menu = document.querySelector(".menu");
-
 let lastScrollY = window.scrollY;
 let menuOffset = 0;
 
