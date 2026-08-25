@@ -9,12 +9,9 @@ countdownElement.textContent = `Only ${daysUntilWedding} days til the wedding!`
 }
 updateCountdown();
 const menu = document.querySelector(".menu");
-let lastScrollY = window.scrollY;
 window.addEventListener("scroll", function () {
-    if (window.scrollY > lastScrollY) {
-        menu.classList.add("menu-hidden");
-    } else {
-        menu.classList.remove("menu-hidden");
-    } 
-lastScrollY = window.scrollY;
-});
+    const amountScrolled = window.scrollY;
+    const maxMove = menu.offsetHeight - 20;
+    const moveAmount = Math.min(amountScrolled, maxMove);
+    menu.style.transform = `translateY(-${moveAmount}px)`
+})

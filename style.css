@@ -134,8 +134,6 @@ body {
         gap: 15px;
         transition: transform 0.3s;
     }
-    .menu-hidden {
-        transform: translateY(-80%);
     }
     .timeline {
         width: 100%;
