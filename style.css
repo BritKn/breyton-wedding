@@ -152,6 +152,7 @@ html {
         flex-direction: column;
         gap: 15px;
         transition: transform 0.3s;
+        align-items: center;
     }
     .timeline {
         width: 100%;
