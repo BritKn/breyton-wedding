@@ -13,5 +13,5 @@ window.addEventListener("scroll", function () {
     const amountScrolled = window.scrollY;
     const maxMove = menu.offsetHeight - 20;
     const moveAmount = Math.min(amountScrolled, maxMove);
-    menu.style.transform = `translateY(-${moveAmount}px)`
+    menu.style.transform = `translateY(-${moveAmount}px)`;
 })

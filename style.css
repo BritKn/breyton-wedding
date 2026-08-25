@@ -134,7 +134,6 @@ body {
         gap: 15px;
         transition: transform 0.3s;
     }
-    }
     .timeline {
         width: 100%;
     }
@@ -149,6 +148,7 @@ body {
     }
     #ceremony, #about, #party {
     scroll-margin-top: 145px;
+    }
     .timeline-photo {
         height: auto;
         object-fit: contain;
@@ -156,7 +156,6 @@ body {
     .menu a:hover {
     color: pink;
     transform: scale(1.03);
-}
 }
 }
 .timeline-photo {
