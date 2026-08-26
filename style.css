@@ -121,6 +121,26 @@ body {
 .timeline-photo:hover {
     transform: scale(1.05);
 }
+#flappy-section {
+    text-align: center;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+#flappy-game {
+    display: block;
+    margin: 20px auto;
+    background-color: lightblue;
+    border: 3px solid black;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+#flappy-start {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 65px;
