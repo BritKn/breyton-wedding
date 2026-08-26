@@ -126,13 +126,13 @@
     <input type="text" id="guest-name" placeholder="Enter your name">
     <p>Will you be attending?</p>
     <select id="attending">
-        <option>Select an option</option>
+        <option value "">Select an option</option>
         <option>Yes</option>
         <option>ABSOLUTELY not</option>
     </select>
     <div id="guest-question">
     <p>How many additional guests are you bringing?</p>
-    <input type="number" id="guest-count">
+    <input type="number" id="guest-count" min="0">
     </div>
     <button id="submit-rsvp">Submit RSVP</button>
     <p id="rsvp-message"></p>

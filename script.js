@@ -46,6 +46,10 @@ if (guestName === "") {
     alert("Please enter your name");
     return;
 }
+if (attending === "") {
+    alert("Please select whether you are attending");
+    return;
+}
     const scriptURL = "https://script.google.com/macros/s/AKfycbzCAVhy7ArK1-PWwqsc04CWqZxOGqabTMVdwdtVfj-jaZ4J7j9Fsaw8Qeu6zoQ0YJM-/exec";
 fetch(scriptURL, {
     method: "POST",
@@ -65,11 +69,11 @@ const guestQuestion = document.getElementById("guest-question");
 const attendingSelect = document.getElementById("attending");
 attendingSelect.addEventListener("change", function (){
     if (attendingSelect.value === "Yes") {
-        guestQuestion.style.display = "block"
-        
+        guestQuestion.style.display = "block";
     } else {
         guestQuestion.style.display = "none";
-    }
+        document.getElementById("guest-count").value = "";
+    } 
         
 })
 
