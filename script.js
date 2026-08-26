@@ -1,4 +1,4 @@
-const weddingDate = new Date("2027-11-07");
+const weddingDate = new Date("2027-11-13");
 function updateCountdown() {
 const today = new Date();
 const timeDifference = weddingDate - today;

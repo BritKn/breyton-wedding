@@ -25,7 +25,7 @@ body {
     font-weight: bold;
     transform: scale(1.1);
 }
-#ceremony, #about, #party {
+#ceremony, #about, #party, #rsvp {
     margin-top: 50px;
     border: 1px solid #2c7da0;
     padding: 25px;
