@@ -61,6 +61,49 @@ fetch(scriptURL, {
 console.log(guestName);
 console.log(attending);
 })
+const guestQuestion = document.getElementById("guest-question");
+const attendingSelect = document.getElementById("attending");
+attendingSelect.addEventListener("change", function (){
+    if (attendingSelect.value === "Yes") {
+        guestQuestion.style.display = "block"
+        
+    } else {
+        guestQuestion.style.display = "none";
+    }
+        
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const canvas = document.getElementById("flappy-game");
 const ctx = canvas.getContext("2d");
 

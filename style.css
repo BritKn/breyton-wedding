@@ -121,6 +121,9 @@ body {
 .timeline-photo:hover {
     transform: scale(1.05);
 }
+#guest-question {
+    display: none;
+}
 #flappy-section {
     text-align: center;
     margin-top: 80px;
