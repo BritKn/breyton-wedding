@@ -40,6 +40,7 @@ const submitButton = document.getElementById("submit-rsvp");
 submitButton.addEventListener("click", function () {
     const guestName = document.getElementById("guest-name").value;
     const attending = document.getElementById("attending").value;
+    const guestCount = document.getElementById("guest-count").value;
 if (guestName === "") {
     alert("Please enter your name");
     return;
@@ -50,7 +51,8 @@ fetch(scriptURL, {
     method: "POST",
     body: JSON.stringify ({
         name: guestName,
-        attending: attending
+        attending: attending,
+        guests: guestCount
     })
 });
 console.log(guestName);
