@@ -115,6 +115,9 @@ body {
     object-fit: cover;
     transition: transform 0.3s;
 }
+.san-diego-photo {
+    object-position: center 40%;
+}
 .timeline-photo:hover {
     transform: scale(1.05);
 }
