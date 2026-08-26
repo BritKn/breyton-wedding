@@ -41,12 +41,12 @@ submitButton.addEventListener("click", function () {
     const guestName = document.getElementById("guest-name").value;
     const attending = document.getElementById("attending").value;
     const guestCount = document.getElementById("guest-count").value;
+      const rsvpMessage = document.getElementById("rsvp-message");
 if (guestName === "") {
     alert("Please enter your name");
     return;
 }
-
-const scriptURL = "https://script.google.com/macros/s/AKfycbzCAVhy7ArK1-PWwqsc04CWqZxOGqabTMVdwdtVfj-jaZ4J7j9Fsaw8Qeu6zoQ0YJM-/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzCAVhy7ArK1-PWwqsc04CWqZxOGqabTMVdwdtVfj-jaZ4J7j9Fsaw8Qeu6zoQ0YJM-/exec";
 fetch(scriptURL, {
     method: "POST",
     body: JSON.stringify ({
@@ -55,6 +55,9 @@ fetch(scriptURL, {
         guests: guestCount
     })
 });
+  rsvpMessage.textContent = `Thanks! Your RSVP was submitted.`;
+  document.getElementById("guest-name").value = "";
+  document.getElementById("guest-count").value = "";
 console.log(guestName);
 console.log(attending);
 })
