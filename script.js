@@ -51,58 +51,12 @@ submitButton.addEventListener("click", function () {
         return;
     }
 
-    if (invitationCode === "") {
-        alert("Please enter your invitation code");
-        return;
-    }
 
     if (attending === "") {
         alert("Please select whether you will be attending");
         return;
     }
-
-    const checkURL = scriptURL + "?code=" + invitationCode;
-
-    fetch(checkURL)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-
-            if (data.valid === true) {
-                document.getElementById("guest-name").value = data.name;
-                document.getElementById("guest-count").max = data.maxGuests;
-
-                if (guestCount > data.maxGuests) {
-                    alert(`Your invitation allows up to ${data.maxGuests} additional guests.`);
-                    return;
-                }
-
-                fetch(scriptURL, {
-                    method: "POST",
-                    mode: "no-cors",
-                    body: JSON.stringify({
-                        name: data.name,
-                        attending: attending,
-                        guests: guestCount
-                    })
-                });
-
-                rsvpMessage.textContent = "Thanks! Your RSVP was submitted.";
-
-                document.getElementById("guest-name").value = "";
-                document.getElementById("guest-count").value = "";
-                document.getElementById("invitation-code").value = "";
-
-            } else {
-                alert("Invitation code not found");
-            }
-        })
-        .catch(function (error) {
-            console.log(error);
-            alert("Something went wrong. Please try again.");
-        });
-});
+})
 const guestQuestion = document.getElementById("guest-question");
 const attendingSelect = document.getElementById("attending");
 attendingSelect.addEventListener("change", function (){
@@ -114,6 +68,7 @@ attendingSelect.addEventListener("change", function (){
     } 
         
 })
+
 
 
 
