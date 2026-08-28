@@ -37,26 +37,39 @@ window.addEventListener("scroll", function () {
 
 });
 const submitButton = document.getElementById("submit-rsvp");
+
 const scriptURL = "https://script.google.com/macros/s/AKfycbzCAVhy7ArK1-PWwqsc04CWqZxOGqabTMVdwdtVfj-jaZ4J7j9Fsaw8Qeu6zoQ0YJM-/exec";
 
 submitButton.addEventListener("click", function () {
+
     const guestName = document.getElementById("guest-name").value;
     const attending = document.getElementById("attending").value;
     const guestCount = document.getElementById("guest-count").value;
     const rsvpMessage = document.getElementById("rsvp-message");
-    const invitationCode = document.getElementById("invitation-code").value;
 
     if (guestName === "") {
         alert("Please enter your name");
         return;
     }
 
-
     if (attending === "") {
         alert("Please select whether you will be attending");
         return;
     }
-})
+
+    fetch(scriptURL, {
+        method: "POST",
+        mode: "no-cors",
+        body: JSON.stringify({
+            name: guestName,
+            attending: attending,
+            guests: guestCount
+        })
+    });
+
+    rsvpMessage.textContent = "Thanks! Your RSVP was submitted.";
+
+});
 const guestQuestion = document.getElementById("guest-question");
 const attendingSelect = document.getElementById("attending");
 attendingSelect.addEventListener("change", function (){
