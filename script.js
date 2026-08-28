@@ -68,6 +68,10 @@ submitButton.addEventListener("click", function () {
     });
 
     rsvpMessage.textContent = "Thanks! Your RSVP was submitted.";
+    document.getElementById("guest-name").value = "";
+    document.getElementById("guest-count").value = "";
+    document.getElementById("attending").value = "";
+    guestQuestion.style.display = "none";   
 
 });
 const guestQuestion = document.getElementById("guest-question");
