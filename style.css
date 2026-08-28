@@ -162,6 +162,15 @@ html {
     margin-bottom: 15px;
     box-sizing: border-box;
 }
+#submit-rsvp {
+    background-color: #2c7da0;
+    color: antiquewhite;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
 @media (max-width: 600px) {
      html {
         scroll-padding-top: 220px;
